@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>To do List</h1>
+    <hr />
+    <form>
+      <label for="Nueva tarea">Nueva tarea</label><br />
+      <input type="text" id="nueva-tarea" /><br />
+    </form>
+    <div class="boton-form">
+      <button id="boton1">Agregar</button>
+    </div>
+    <div class="panel-tareas">
+      <div class="resumen-tareas">
+        <p id="tareas-total">Total:</p>
+        <p id="tareas-realizadas">Realizadas:</p>
+      </div>
+      <div class="tabla-tareas">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Tarea</th>
+            <th></th>
+          </tr>
+          <tbody id="body-tabla"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

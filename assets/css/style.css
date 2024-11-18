@@ -1,0 +1,30 @@
+body {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  border: 1px solid black;
+  height: fit-content;
+}
+
+.panel-tareas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: normal;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.boton-form {
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+}
+
+.resumen-tareas,
+.tabla-tareas {
+  width: 50%;
+}
