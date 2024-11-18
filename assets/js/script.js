@@ -29,8 +29,12 @@ function actualizarTabla() {
     (x) =>
       (bodyTable.innerHTML += `<tr>
               <td id="cambiar"> ${x.id}</td>
-              <td style="color: red" id="cambiar-${x.id}"> ${x.nombretarea} </td>
-              <td><button onclick="tareaRealizada(${x.id}); tareasCompletasParrafo()">Completada</button</td> </tr>`)
+              <td style="color: ${x.estado ? "green" : "red"}" id="cambiar-${
+        x.id
+      }"> ${x.nombretarea} </td>
+              <td><button onclick="tareaRealizada(${
+                x.id
+              }); tareasCompletasParrafo()">Completada</button</td> </tr>`)
   );
   console.log(tareas);
 }
